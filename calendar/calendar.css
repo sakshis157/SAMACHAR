@@ -1,0 +1,41 @@
+.calendar{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.calendar-main{
+   width: 250px;
+   height: 250px;
+   background-color: aliceblue;
+   display: flex;
+   align-items: center;
+   
+}
+
+.left, .right{
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   font-size: 24px;
+}
+
+.right{
+   width: 42%;
+   background-color: #366fd1; 
+}
+.right p{
+   color: rgb(214, 236, 239);
+   margin: 5px;
+}
+.left{
+   width: 58%;
+}
+
+#date{
+   font-size: 100px;
+   line-height: 90px;
+}
