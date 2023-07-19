@@ -1,0 +1,264 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@500&display=swap");
+
+@import url(calculator/calculator.css);
+@import url(calendar/calendar.css);
+@import url(weather/weather.css);
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --primary-text-color: #183b56;
+   --secondary-text-color: #577592; /*card-content color*/
+   --accent-color: #58aae8;  /*search-box color*/
+   --accent-color-dark: #1d69a3;
+}
+body {
+   font-family: "Poppins", sans-serif;
+}
+.reading-icon{
+   height: 35px;
+   cursor: pointer;
+   margin-right: 8px;
+   margin-left: 20px;
+   background-color: #d0e2f0;
+   border-radius: 13px;
+}
+.samachar-title{
+   cursor: pointer;
+   color: #a2ddeb;
+}
+.samachar-title:hover{
+   color: #183b56;
+}
+p {
+   font-family: "Roboto", sans-serif;
+   color: var(--secondary-text-color);
+   line-height: 1.4rem;
+}
+a {
+   text-decoration: none;
+}
+
+ul {
+   list-style: none;
+}
+
+.flex {
+   display: flex;
+   align-items: center;
+}
+
+.container {
+   margin-inline: auto;
+   overflow: hidden;
+   margin-top: 7px;
+}
+
+nav {
+   background-color: #366fd1;
+   box-shadow: 0 0 4px #bbd0e2;
+   position: fixed;
+   top: 0;
+   z-index: 99;
+   left: 0;
+   right: 0;
+   height: 70px;
+}
+
+.main-nav { 
+   padding-block: 8px;
+   margin-left: 55px;
+}
+
+.nav-links{
+   margin-left: 300px;
+   margin-right: 160px;
+}
+.nav-links ul {
+   gap: 16px;
+}
+
+.hover-link {
+   cursor: pointer;
+}
+
+.hover-link:hover {
+   color: rgb(13, 12, 94);
+   background-color: #d4ecff;
+}
+
+.nav-item.active {
+   color: rgb(13, 12, 94);
+   background-color: #d4ecff;
+
+}
+.nav-item{
+   color:#e7ecc2;
+   border: none;
+   padding: 5px;
+   border-radius: 30px;
+}
+.search-bar {
+   height: 32px;
+   gap: 8px;
+}
+
+.news-input {
+   width: 200px;
+   height: 100%;
+   padding-inline: 12px;
+   border-radius: 4px;
+   border: 2px solid #bbd0e2;
+   font-family: "Roboto", sans-serif;
+}
+
+.search-button {
+   background-color: var(--accent-color);
+   color: rgb(244, 238, 238);
+   padding: 8px 24px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-family: "Roboto", sans-serif;
+}
+
+.search-button:hover {
+   background-color: var(--accent-color-dark);
+}
+
+main {
+   padding-block: 20px;
+   margin-top: 80px;
+}
+
+.cards-container {
+   flex-wrap: wrap;
+   row-gap: 20px;
+   align-items: start;
+   max-width: 1180px;
+   margin-inline: auto;
+   overflow: hidden;
+   margin-top: 7px;
+   margin-left: 50px;
+}
+
+.card {
+   width: 330px;
+   min-height: 500px;
+   box-shadow: 0 0 4px #d4ecff;
+   border-radius: 4px;
+   cursor: pointer;
+   background-color: #fff;
+   overflow: hidden;
+   transition: all 0.3s ease;
+   margin: 15px 20px;
+}
+
+.card:hover {
+   box-shadow: 1px 1px 8px #5690c0;
+   background-color: #a6d0e4;
+   transform: translateY(-10px);
+}
+
+.card-header img {
+   width: 100%;
+   height: 180px;
+   object-fit: cover;
+   margin: 2px;
+}
+
+.card-content {
+   padding: 12px;
+}
+
+.news-source {
+   margin-block: 12px;
+}
+
+.block{
+   display: flex;
+   flex-direction: row;
+   gap: 50px;
+   margin-left: 0;
+   margin-right: 30px;
+}
+
+.assets-container{
+   height: 100%;
+   margin-top: 130px;
+   width: 250px;
+   padding: 0;
+}
+.flex-col{
+   display: flex;
+   flex-direction: column;
+}
+.box {
+   padding: 5px;
+   height:fit-content;
+   margin-bottom: 30px;
+}
+
+.weather #search-weather:hover,
+ .calculator:hover,
+  .calendar:hover{
+   box-shadow: 1px 1px 8px #86cce2;
+   background-color: #a6d0e4;
+   transform: translateY(8px);
+}
+
+
+
+
+footer{
+   background-color: #366fd1;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.thanksinfo {
+   font-family: "Poppins", sans-serif;
+   color: var(--primary-text-color);
+   
+   font-size: 16px;
+   margin-top: 20px;
+   margin-bottom: 5px;
+   
+  
+}
+
+.socials{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-bottom: 10px;
+}
+img{
+   height: 30px;
+   margin: 8px;
+   cursor: pointer;
+}
+
+.socials img:hover{
+   background-color: #d4ecff;
+   border-radius: 30px;
+}
+
+.asset-title{
+   text-align: center;
+   color:#154d79;
+}
+
+
+.during-loading{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+}
