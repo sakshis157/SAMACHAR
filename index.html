@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SAMACHAR</title>
+   <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+   <nav>
+      <div class="main-nav container flex">
+        
+         <img class="reading-icon" onclick="reload()" src="images/reading-icon.png" alt="reading-icon"/>
+         <h1 class="samachar-title" onclick="reload()">SAMACHAR</h1>
+         
+         
+         <div class="nav-links">
+            <ul class="flex">
+               <li class="hover-link nav-item" id="trending" onclick="onNavItemClick('trending')">Trending</li>
+               <li class="hover-link nav-item" id="sports" onclick="onNavItemClick('sports')">Sports</li>
+               <li class="hover-link nav-item" id="entertainment" onclick="onNavItemClick('entertainment')">Entertainment</li>
+               <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+               <li class="hover-link nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+            </ul>
+         </div>
+         
+         
+         <div class="search-bar flex">
+            <input id="search-text" type="text" class="news-input" placeholder="e.g. Science">
+            <button id="search-button" class="search-button">Search</button>
+         </div>
+      
+      
+      </div>
+   </nav>
+
+
+  
+<!-- Main Content-->
+
+
+  
+
+   <div class="block" id="main-block">
+      <main>
+         <div class="cards-container container flex" id="cards-container">
+      
+         </div>
+      </main>
+
+      <template id="template-news-card">
+         
+         <div class="card">
+         
+            <div class="card-header">
+            <img src="https://via.placeholder.com/400x200" alt="news-image" id="news-img"/></div>
+            
+            <div class="card-content">
+               <h3 id="news-title">This is the Title</h3>
+               <h6 class="news-source" id="news-source">End Gadget 26/08/2023</h6>
+               <p class="news-desc" id="news-desc">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+                  saepe quis voluptatum quisquam vitae doloremque facilis molestias quae ratione cumque!</p>
+            </div>
+         
+         </div>
+      </template>
+
+
+     
+
+<!--------- Assets----------->  
+
+
+
+     
+      <div class="assets-container flex-col">
+        
+         <div class="asset-title">Check Weather</div>
+        
+         <div class="weather box">
+            
+            <div class="row">
+
+               <form action="" class="weather-form">
+                  <input type="search" placeholder="for.eg. delhi" id="search-weather">
+               </form>
+           
+            </div>
+           
+           <div class="row" id="weather-row">
+             
+              <div class="weather-icon-container">
+               <img src="" alt="" id="weather-icon"/>
+              </div>
+             
+              <div>
+               <h2 id="temperature"></h2>
+               <h4 id="clouds"></h4>
+              </div>
+           
+            </div>
+        
+         </div>
+         
+         <div class="asset-title">Calendar</div>
+         <div class="calendar box">
+            <div class="calendar-main">
+               <div class="left">
+                  <p id="date">01</p>
+                  <p id="day">Sunday</p>
+               </div>
+               <div class="right">
+                  <p id="month">January</p>
+                  <p id="year">2023</p>
+               </div>
+            </div>
+            
+         </div>
+         
+         <div class="asset-title">For Math-Magicians</div>
+         <div class="calculator box">
+            <div class="cal_container cal_flex cal_flex-col cal_items-center cal_mx-auto cal_m-w-20">
+               <div class="cal_row">
+                  <input class="cal_input" type="text" />
+               </div>
+               <div class="cal_row">
+                  <button class="cal-button">C</button>
+                  <button class="cal-button">%</button>
+                  <button class="cal-button">M+</button>
+                  <button class="cal-button">M-</button>
+               </div>
+               <div class="cal_row">
+                  <button class="cal-button">7</button>
+                  <button class="cal-button">8</button>
+                  <button class="cal-button">9</button>
+                  <button class="cal-button">*</button>
+               </div>
+               <div class="cal_row">
+                  <button class="cal-button">4</button>
+                  <button class="cal-button">5</button>
+                  <button class="cal-button">6</button>
+                  <button class="cal-button">/</button>
+               </div>
+               <div class="cal_row">
+                  <button class="cal-button">1</button>
+                  <button class="cal-button">2</button>
+                  <button class="cal-button">3</button>
+                  <button class="cal-button">+</button>
+               </div>
+               <div class="cal_row">
+                  <button class="cal-button">0</button>
+                  <button class="cal-button">.</button>
+                  <button class="cal-button">=</button>
+                  <button class="cal-button">-</button>
+               </div>
+            </div>
+         
+         </div>
+      
+      
+      </div>
+   </div>
+
+   <footer>
+     <div class="thanksinfo">
+       <h4>Connect with us on socials </h4>
+     </div>
+     <div class="socials">
+      <img class="img" src="images/facebook-icon-2.png" alt="facebook">
+      <img class="img" src="images/twitter-icon.png" alt="twitter">
+      <img class="img"  src="images/instagram-icon.png" alt="insta">
+     </div>
+   </footer>
+   
+
+   </div>
+   <script src="script.js"></script>
+   <script src="calculator/calculator.js"></script>
+   <script src="calendar/calendar.js"></script>
+   <script src="weather/weather.js"></script>
+</body>
+
+</html>
+
